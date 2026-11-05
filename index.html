@@ -15,8 +15,8 @@
 
     body {
       margin: 0;
-      background: #f6f4ef;
-      color: #202826;
+      background: #FAFBFC;
+      color: #222B36;
       font-family: Arial, sans-serif;
     }
 
@@ -24,7 +24,7 @@
     .hero {
       width: 100%;
       height: 405px;
-      background-color: #2e705e;
+      background-color: #F8F9FA;
       background-image: url("photo.jpg");
       background-size: cover;
       background-position: center;
@@ -43,11 +43,12 @@
       letter-spacing: -1.5px;
       line-height: 1.1;
       margin: 0 0 16px;
+      color: #24476B;
     }
 
     .intro {
       font-size: 16px;
-      color: #59635f;
+      color: #596575;
       line-height: 1.6;
       margin-bottom: 36px;
     }
@@ -55,18 +56,19 @@
     /* Link cards */
     .link-card {
       display: block;
-      background: #ffffff;
-      border: 1px solid #dedbd4;
+      background: #24476B;
+      border: 1px solid #24476B;
       border-radius: 10px;
       padding: 20px 18px;
       margin-bottom: 10px;
-      color: inherit;
+      color: #FFFFFF;
       text-decoration: none;
       transition: 0.2s ease;
     }
 
     .link-card:hover {
-      border-color: #2e705e;
+      background: #173451;
+      border-color: #173451;
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
@@ -76,11 +78,12 @@
       font-size: 19px;
       font-weight: bold;
       margin-bottom: 7px;
+      color: #FFFFFF;
     }
 
     .link-description {
       font-size: 14px;
-      color: #59635f;
+      color: #E3EAF1;
       line-height: 1.5;
     }
 
@@ -97,6 +100,39 @@
         font-size: 42px;
       }
     }
+      
+    .link-dropdown summary {
+      cursor: pointer;
+      list-style: none;
+      position: relative;
+      padding-right: 45px;
+    }
+
+    .link-dropdown summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .link-dropdown summary::after {
+      content: "⌄";
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+    }
+
+    .link-dropdown[open] summary::after {
+      content: "⌃";
+    }
+
+    .sub-link {
+      margin-left: 18px;
+      margin-bottom: 8px;
+      width: calc(100% - 18px);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
   </style>
 </head>
 
@@ -111,34 +147,74 @@
 
     <p class="intro">
       Biomedical Sciences undergraduate at King's College
-      London, with research interests in cancer biology,
-      immunology and translational medicine.
+      London, with research interests in cancer biology.
     </p>
 
-    <a class="link-card" href="CV.pdf"
+    <a class="link-card" href="https://www.linkedin.com/in/amelie-hrbkova-ah04"
        target="_blank" rel="noopener">
-      <div class="link-title">My CV</div>
+      <div class="link-title">Linkedin</div>
       <div class="link-description">
-        Research experience, education and skills (PDF)
       </div>
     </a>
 
-    <a class="link-card" href="#"
-       aria-label="Interview link to be added">
-      <div class="link-title">My interview</div>
+    <a class="link-card" href="https://centrumradius.cz/from-london-and-padua-to-cutting-edge-research-at-fzu-in-prague/"
+      <div class="link-title">Interview | Institute of Physics, Czech Academy of Sciences</div>
       <div class="link-description">
-        Where I talk about my work and background
+        Sharing my research experience and insights into working at the Department of Optical and Biophysical Systems.
       </div>
     </a>
 
-    <a class="link-card" href="#"
-       aria-label="Articles link to be added">
-      <div class="link-title">My articles</div>
+    <a class="link-card" href="https://www.sciencemindmag.com/article-details?recordId=recx5Jk98s5CZLxpK"
+      <div class="link-title">How Cancer Hijacks the Body’s Wound-Healing System | ScienceMind</div>
       <div class="link-description">
-        Science communication and published writing
+        My article in King's College London's student STEM magazine exploring how cancer exploits the body's natural wound-healing mechanisms to support tumour growth.
       </div>
     </a>
 
+    <a class="link-card" href="https://www.kingscollegelondonpolicyresearchcentre.com/summer-2026-edition"
+      <div class="link-title">The Postcode Lottery of Cancer Diagnosis: Evaluating RDC Rollout Across England | Policy Research Centre</div>
+      <div class="link-description">
+        My article for King's College London's Policy Research Centre examining regional inequalities in cancer diagnosis and the role of Rapid Diagnostic Centres in improving access to early detection.
+      </div>
+    </a>
+
+    <a class="link-card" href="https://www.kclwomeninstem.co.uk/"
+      <div class="link-title">KCL Womxn in STEM Society</div>
+      <div class="link-description">
+        My involvement in leading sponsorship, industry partnerships and outreach initiatives to support women and non-binary students in STEM at King's College London.
+      </div>
+    </a>
+
+    <a class="link-card" href="https://www.avcr.cz/cs/pro-verejnost/aktuality/Stredoskolaci-predstavili-vysledky-svych-stazi-na-konferenci-Otevrene-vedy/" target="_blank" rel="noopener">
+      <div class="link-title">First Place Research Award | Open Science, Czech Academy of Sciences</div>
+      <div class="link-description">
+        Featured in the Czech Academy of Sciences' article recognising our first-place award in Biology and Ecology at the 2023 Open Science Conference for research investigating pyrimidine metabolism in lung cancer cells.
+      </div>
+    </a>
+
+    
+    <details class="link-dropdown">
+      <summary class="link-card">
+        <div class="link-title">PORGMUN Conference | Deputy Secretary-General</div>
+        <div class="link-description">
+          As Deputy Secretary-General of the PORGMUN Model United Nations conference, I helped coordinate and organise the event, including representing the conference at Prague Castle.
+        </div>
+      </summary>
+
+      <a class="link-card sub-link"
+         href="https://tiskovezpravy.hn.cz/c1-67189890-na-prazskem-hrade-probehlo-slavnostni-zahajeni-mezinarodni-studentske-konference-porgmun"
+         target="_blank" rel="noopener">
+          Czech Business Daily (Hospodářské noviny)
+      </a>
+
+      <a class="link-card sub-link"
+         href="https://forbes.cz/ze-studentu-diplomati-prazsky-hrad-vita-desaty-rocnik-konference-kde-mladi-zazivaji-fungovani-osn/"
+         target="_blank" rel="noopener">
+          Forbes Czech Republic
+      </a>
+    </details>
+
+    
   </main>
 
 </body>
