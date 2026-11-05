@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Amélie Hrbková | Academic Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f6f4ef;
+      color: #202826;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Full-width photograph */
+    .hero {
+      width: 100%;
+      height: 405px;
+      background-color: #2e705e;
+      background-image: url("photo.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Main content */
+    .content {
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 48px 24px 70px;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: 52px;
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      margin: 0 0 16px;
+    }
+
+    .intro {
+      font-size: 16px;
+      color: #59635f;
+      line-height: 1.6;
+      margin-bottom: 36px;
+    }
+
+    /* Link cards */
+    .link-card {
+      display: block;
+      background: #ffffff;
+      border: 1px solid #dedbd4;
+      border-radius: 10px;
+      padding: 20px 18px;
+      margin-bottom: 10px;
+      color: inherit;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .link-card:hover {
+      border-color: #2e705e;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .link-title {
+      font-family: Georgia, serif;
+      font-size: 19px;
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+
+    .link-description {
+      font-size: 14px;
+      color: #59635f;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        height: 300px;
+      }
+
+      .content {
+        padding: 40px 24px 60px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero" role="img"
+          aria-label="Portfolio cover photograph"></header>
+
+  <main class="content">
+
+    <h1>Amélie Hrbková</h1>
+
+    <p class="intro">
+      Biomedical Sciences undergraduate at King's College
+      London, with research interests in cancer biology,
+      immunology and translational medicine.
+    </p>
+
+    <a class="link-card" href="CV.pdf"
+       target="_blank" rel="noopener">
+      <div class="link-title">My CV</div>
+      <div class="link-description">
+        Research experience, education and skills (PDF)
+      </div>
+    </a>
+
+    <a class="link-card" href="#"
+       aria-label="Interview link to be added">
+      <div class="link-title">My interview</div>
+      <div class="link-description">
+        Where I talk about my work and background
+      </div>
+    </a>
+
+    <a class="link-card" href="#"
+       aria-label="Articles link to be added">
+      <div class="link-title">My articles</div>
+      <div class="link-description">
+        Science communication and published writing
+      </div>
+    </a>
+
+  </main>
+
+</body>
+</html>
